@@ -11,7 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Unzip All
-      run: unzip RDP-1-HOUR-main.zip
+      run: |
+        unzip RDP-1-HOUR-main.zip
+        cd RDP-1-HOUR-main
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
