@@ -16,6 +16,7 @@ jobs:
         cd RDP-1-HOUR-main
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
+        cd RDP-1-HOUR-main
         copy nssm.exe C:\Windows\System32
         copy ngrok.exe C:\Windows\System32
     - name: Connect your NGROK account
