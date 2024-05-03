@@ -15,7 +15,7 @@ jobs:
         unzip RDP-1-HOUR-main.zip
         cd RDP-1-HOUR-main
     - name: Cd RDP
-    - run: cd RDP-1-HOUR-main
+      run: cd RDP-1-HOUR-main
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         cd RDP-1-HOUR-main
